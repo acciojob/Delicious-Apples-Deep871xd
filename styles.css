@@ -1,17 +1,16 @@
 /* your code here */
-
-body {
-    background-color: #90ee90;
+body{
+    background-color: #90ee99;
 }
 
-.product_container {
-    margin: 0px auto;
+.product_container{
+    margin: 0 auto;
     width: fit-content;
     display: flex;
     margin-top: 5%;
 }
 
-.product_details {
+.product_details{
     width: 600px;
     height: 600px;
     background-color: white;
@@ -19,48 +18,48 @@ body {
     border-radius: 10px;
 }
 
-.product_image {
+.product_image{
     width: 300px;
     height: 500px;
-    background-color: black;
-    /* position: absolute;
-    left: 10%;
-    top: 50px;
-    */
+    /* background-color: black; */
     position: relative;
-    left: 27%;
-    bottom: 10%;
-    margin-top: 5%;
+    left: 250px;
+    top: 3px;
+    margin-top: 7%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 4px 6px 24px -5px rgba(0,0,0,0.75);
+    border-radius: 10px;
 }
 
-.detail_first {
+.detail_first{
     flex: 0.45;
     /* background-color: blue; */
 }
 
-.detail_second {
+.detail_second{
     flex: 0.55;
-    /* background-color: aqua; */
+    /* background-color: blueviolet; */
     padding-left: 30px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.code_text {
+.code_text{
     font-size: 12px;
     opacity: 0.3;
 }
 
-.cost_text {
+.cost_text{
     color: red;
     font-size: 20px;
 }
 
-.price_text {
-    font-size: 80px;
+.price_text{
+    font-size: 75px;
 }
 
-.color_img:hover {
-    border: 1px solid black;
+.color_image:hover{
+    border: 1px solid grey;
     border-radius: 5px;
     transform: scale(0.9);
     cursor: pointer;
@@ -70,76 +69,54 @@ li {
     font-size: 13px;
 }
 
-.add_to_cart {
-    background-color: indianred;
+.add_to_cart_btn{
+    background-color: rgb(245, 84, 84);
     color: white;
+    font-weight: 700;
     padding: 20px 35px;
     border: none;
-    border-radius: 10px;
-    box-shadow: 2px 2px 25px -5px gray;
-    margin-top: 15px;
-    font-size: 16px;
-    font-weight: 700;
-}
-
-.add_to_cart:hover {
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px 0px grey;
     cursor: pointer;
 }
 
-.product_image {
-    border: none;
-    border-radius: 10px;
-    /* border: 1px solid gray; */
-    box-shadow: 2px 2px 25px -5px gray;
-    display: flex;
-    flex-direction: column;
-    border-radius: 50px;
+.top_section{
+    flex: 0.9;
+    background-image: radial-gradient(#f4f4f4 30%, #adff2f 75%);
+    border-radius: 10px 10px 0px 0px;
 }
 
-.list_of_apples {
-    background-color: white;
+.bottom_section{
     flex: 0.2;
-    padding: 20px;
+    background-color: white;
+    padding-top: 20px;
     padding-left: 20px;
     border-radius: 0px 0px 10px 10px;
 }
 
-
-/* .list_of_apples :hover {
-    border-radius: 5px;
-    transform: scale(0.9);
-    cursor: pointer;
-} */
-
-.color_img {
-    border: 0.1px solid grey;
-    transform: scale(0.9);
-}
-
-.apple_img {
-    flex: 0.9;
-    background: radial-gradient(#F5F5F5 30%, greenyellow 70%);
-    border-radius: 10px 10px 0px 0px;
-}
-
-i:hover {
-    cursor: pointer;
-}
-
-.main_apple {
+.main_apple_img{
     position: absolute;
+    height: 300px;
     left: -100px;
-    /* height: 300px;
-    top:25px; */
+    top: 20px;
 }
 
-.icon1 {
+.apple_image {
+    border: 0.1px solid grey;
+    /* transform: scale(0.9); */
+}
+
+.apple_image:hover{
+    transform: scale(0.9);
+}
+
+.icon1{
     color: white;
     margin: 15px;
 }
 
-.icon2 {
-    color: white;
+.icon2{
     float: right;
+    color: white;
     margin: 15px;
 }
