@@ -1,4 +1,5 @@
 /* your code here */
+
 body {
     background-color: #90ee90;
 }
@@ -7,13 +8,13 @@ body {
     margin: 0px auto;
     width: fit-content;
     display: flex;
-    margin-top: 10%;
+    margin-top: 5%;
 }
 
 .product_details {
     width: 600px;
-    background-color: white;
     height: 600px;
+    background-color: white;
     display: flex;
     border-radius: 10px;
 }
@@ -21,22 +22,27 @@ body {
 .product_image {
     width: 300px;
     height: 500px;
-    position: relative;
-    left: 250px;
+    background-color: black;
+    /* position: absolute;
+    left: 10%;
     top: 50px;
-    display: flex;
-    flex-direction: column;
-    box-shadow: 4px 6px 24px -5px rgba(0,0,0,0.75);
+    */
+    position: relative;
+    left: 27%;
+    bottom: 10%;
+    margin-top: 5%;
 }
 
-.detail_first{
+.detail_first {
     flex: 0.45;
+    /* background-color: blue; */
 }
 
 .detail_second {
     flex: 0.55;
-    padding-left: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* background-color: aqua; */
+    padding-left: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
 }
 
 .code_text {
@@ -64,42 +70,67 @@ li {
     font-size: 13px;
 }
 
-.add_to_cart_btn {
-    background-color: red;
+.add_to_cart {
+    background-color: indianred;
     color: white;
     padding: 20px 35px;
     border: none;
     border-radius: 10px;
-    box-shadow: 2px 2px 25px -5px grey;
-    font-size: 16px;
+    box-shadow: 2px 2px 25px -5px gray;
     margin-top: 15px;
+    font-size: 16px;
     font-weight: 700;
 }
 
-.top_section {
-    flex: 0.8;
-    background: radial-gradient(#f4f4f4 30%, #adff2f 70%);
-    border-radius: 10px 10px 0px 0px;
+.add_to_cart:hover {
+    cursor: pointer;
 }
 
-.bottom_section {
-    flex: 0.2;
+.product_image {
+    border: none;
+    border-radius: 10px;
+    /* border: 1px solid gray; */
+    box-shadow: 2px 2px 25px -5px gray;
+    display: flex;
+    flex-direction: column;
+    border-radius: 50px;
+}
+
+.list_of_apples {
     background-color: white;
-    padding-top: 20px;
+    flex: 0.2;
+    padding: 20px;
     padding-left: 20px;
     border-radius: 0px 0px 10px 10px;
 }
 
-.main_apple_img {
-    position: absolute;
-    left: -100px;
-    height: 300px;
-    top: 25px;
+
+/* .list_of_apples :hover {
+    border-radius: 5px;
+    transform: scale(0.9);
+    cursor: pointer;
+} */
+
+.color_img {
+    border: 0.1px solid grey;
+    transform: scale(0.9);
 }
 
 .apple_img {
-    border: 0.1px solid grey;
-    transform: scale(0.9);
+    flex: 0.9;
+    background: radial-gradient(#F5F5F5 30%, greenyellow 70%);
+    border-radius: 10px 10px 0px 0px;
+}
+
+i:hover {
+    cursor: pointer;
+}
+
+.main_apple {
+    position: absolute;
+    left: -100px;
+    /* height: 300px;
+    top:25px; */
 }
 
 .icon1 {
@@ -108,17 +139,7 @@ li {
 }
 
 .icon2 {
-    float: right;
-    color:transparent;
-    margin: 15px;
     color: white;
-}
-
-.add_to_cart_btn:hover{
-    background-color:grey;
-    transform: scale(0.9);
-}
-
-h4{
-    color: grey;
+    float: right;
+    margin: 15px;
 }
